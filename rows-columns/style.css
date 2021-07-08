@@ -1,0 +1,33 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-white: #fff;
+}
+
+/* Scenario 1: 4 grid items but more than 4 grid columns*/
+
+main {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+/* Scenario 1: 4 grid items but more than 4 grid rows*/
+
+main {
+  height: 500px;
+  display: grid;
+  grid-template-columns: 300px 300px;
+  grid-template-rows: 200px 200px 200px;
+}
+
+/* Styling grid items */
+main div {
+  padding: 0.5rem;
+  background: olivedrab;
+  color: var(--color-white);
+}
